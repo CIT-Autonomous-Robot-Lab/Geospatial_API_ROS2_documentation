@@ -1,4 +1,4 @@
-# VPS-Documentation
+# VPS Documentation
 
 ---
 
@@ -27,10 +27,10 @@ Ubuntu 20.04.3 LTS（22.04 でも動作確認済み）
 2. [プロジェクトの作成](https://console.cloud.google.com/projectcreate?hl=ja)
 3. サイドバーで`API とサービス` -> `ライブラリ` の順に選択
 4. ARCore API を検索し、有効にするをクリック。ARCore API の管理ページに遷移  
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/arcoreapi.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/arcoreapi.png" width="720px">
 
 5. サイドバーで`API とサービス` -> `認証情報` の順に選択し、`認証情報を作成` -> `APIキーを選択`  
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/authentication.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/authentication.png" width="720px">
 
 6. API キーが作成されるのでコピー
 
@@ -42,19 +42,19 @@ Ubuntu 20.04.3 LTS（22.04 でも動作確認済み）
 2. [こちら](https://github.com/devemin/Geospatial2ros)のリポジトリをダウンロードし Unity で開く
 3. API Key の設定  
    `Unity` -> `編集` -> `プロジェクト設定` -> `XR Plug-in Management` -> `ARCore Extensions` -> `Android API Key` に先ほどの API キーを入力  
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/apikey.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/apikey.png" width="720px">
 
 4. ROS の設定  
    `Unity` -> `Rbotics` -> `ROS Settings` で ROS のバージョンを ROS 2 に変更し、IP アドレスを入力（IP アドレスは後で変更可）
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/rossettings.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/rossettings.png" width="720px">
 
 5. API Level の設定  
    `Unity` -> `編集` -> `プロジェクト設定` -> `Project` -> `プレイヤー` -> `その他の設定` -> `識別` の API レベルを 2 ヵ所設定  
    ※API Level については [Android Developer](https://developer.android.com/guide/topics/manifest/uses-sdk-element?hl=ja#ApiLevels) を参照してください。
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/apilevel.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/apilevel.png" width="720px">
 6. プラットフォームの変更とビルド設定  
    `Unity` -> `File` -> `Build Settings` -> （プラットフォームを Android に変更）-> `シーンを追加` -> Geospatial2ros.unity を追加 -> `Build`
-   <img src="https://github.com/RyodaiArai/VPS_documentation/blob/main/images/buildsettings.png" width="720px">
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/buildsettings.png" width="720px">
 
 7. apk ファイルが作成させるので、Android 端末に転送しインストール
 
