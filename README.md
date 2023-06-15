@@ -10,11 +10,10 @@ ARCore Geospatial API から取得した位置情報を ROS 2 の sensor_msgs/Na
 
 ## 使用環境
 
-Windows 10 64bit  
-Android 13  
 Unity Hub 3.4.2  
 Unity 2021.3.26.f1  
-Ubuntu 20.04.3 LTS（22.04 でも動作確認済み）  
+Ubuntu 22.04
+Android 13  
 ※ARCore 対応デバイスは[こちら](https://developers.google.com/ar/devices?hl=ja)を参照
 
 ---
@@ -39,6 +38,7 @@ Ubuntu 20.04.3 LTS（22.04 でも動作確認済み）
 ### Unity の準備
 
 1. [Unity Hub](https://unity.com/ja/download)をダウンロードしインストール
+   （Linux にインストールする方法は[こちら](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)を参照してください。）
 2. [こちら](https://github.com/devemin/Geospatial2ros)のリポジトリをダウンロードし Unity で開く
 3. API Key の設定  
    `Unity` -> `編集` -> `プロジェクト設定` -> `XR Plug-in Management` -> `ARCore Extensions` -> `Android API Key` に先ほどの API キーを入力  
