@@ -12,7 +12,7 @@ ARCore Geospatial API から取得した位置情報を ROS 2 の sensor_msgs/Na
 
 Unity Hub 3.4.2  
 Unity 2021.3.26.f1  
-Ubuntu 22.04
+Ubuntu 22.04  
 Android 13  
 ※ARCore 対応デバイスは[こちら](https://developers.google.com/ar/devices?hl=ja)を参照
 
@@ -53,7 +53,7 @@ Android 13
    ※API Level については [Android Developer](https://developer.android.com/guide/topics/manifest/uses-sdk-element?hl=ja#ApiLevels) を参照してください。
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/apilevel.png" width="720px">
 6. プラットフォームの変更とビルド設定  
-   `Unity` -> `File` -> `Build Settings` -> （プラットフォームを Android に変更）-> `シーンを追加` -> Geospatial2ros.unity を追加 -> `Build`
+   `Unity` -> `File` -> `Build Settings` -> （プラットフォームを Android に変更）-> `シーンを追加` -> Geospatial2ros.unity を追加 -> `Build`  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/buildsettings.png" width="720px">
 
 7. apk ファイルが作成させるので、Android 端末に転送しインストール
@@ -81,7 +81,7 @@ Android 13
 
 ### rosbag
 
-1. rosbag の録画
+1. rosbag の録画  
    すべてのトピックを記録する場合（-a オプション）
    ```
    ros2 bag record -a
@@ -90,12 +90,10 @@ Android 13
    ```
    ros2 bag record -o <ファイル名>.db3 <トピック名>
    ```
-2. rosbag の停止
-   録画を停止するには、以下のコマンドを実行
-   ```
-   Ctrl + C
-   ```
-3. rosbag の再生
+2. rosbag の停止  
+   録画を停止するには、以下のコマンドを実行  
+   `Ctrl + C`
+3. rosbag の再生  
    ```
    ros2 bag play <ファイル名>.db3
    ```
