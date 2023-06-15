@@ -106,9 +106,11 @@ Android 13
 
 1. [Foxglove](https://console.foxglove.dev/) にアクセスしログイン  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovelogin.png" width="720px">
-2. Visualize Data を選択  
+2. `Visualize Data` を選択  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovedashboard.png" width="720px">
-3. ローカルファイルを開くを選択し、録画した bag file を開く  
+3. `ローカルファイルを開く`を選択し、録画した bag file を開く  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovefile.png" width="720px">
 4. `Add Panel` から地図を選択（既存のパネルがすでにある場合は削除してから追加）  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovepanel.png" width="720px">
+5. 録画した bag file が可視化される  
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovevisualized.png" width="720px">
