@@ -75,7 +75,7 @@ Android 13
    ```
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
    ```
-   ※ROS_IP は自身の IP アドレスを設定してください。
+   ※ROS_IP はスマートフォンの IP アドレスを設定してください。
 
 ---
 
@@ -99,3 +99,16 @@ Android 13
    ```
    ros2 bag play <ファイル名>.db3
    ```
+
+---
+
+### Foxglove での可視化
+
+1. [Foxglove](https://console.foxglove.dev/) にアクセスしログイン  
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovelogin.png" width="720px">
+2. Visualize Data を選択  
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovedashboard.png" width="720px">
+3. ローカルファイルを開くを選択し、録画した bag file を開く  
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovefile.png" width="720px">
+4. `Add Panel` から地図を選択（既存のパネルがすでにある場合は削除してから追加）  
+   <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovepanel.png" width="720px">
