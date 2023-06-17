@@ -1,24 +1,21 @@
 # VPS Documentation
 
----
-
 ## 概要
 
-ARCore Geospatial API から取得した位置情報を ROS 2 の sensor_msgs/NavSatFix 型で Publish し、指定の IP アドレスに送信
-
----
+ARCore Geospatial APIから取得した位置情報を ROS 2の`sensor_msgs/NavSatFix`型でPublishし、指定のIPアドレスに送信
 
 ## 使用環境
 
-Unity Hub 3.4.2  
-Unity 2021.3.26.f1  
-Ubuntu 22.04  
-Android 13  
-※ARCore 対応デバイスは[こちら](https://developers.google.com/ar/devices?hl=ja)を参照
+* スマートフォン（ARCore 対応デバイスは[こちら](https://developers.google.com/ar/devices?hl=ja)）
+  * Google Pixel 6
+    * Android 13
 
----
-
-## 使い方
+* ノートPC
+  * Ubuntu 22.04
+    * Unity Hub 3.4.2  
+    * Unity 2021.3.26.f1  
+  
+## アプリ作成（スマートフォン側の準備）
 
 ### GCP（Google Cloud Platform）の設定
 
@@ -32,8 +29,6 @@ Android 13
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/authentication.png" width="720px">
 
 6. API キーが作成されるのでコピー
-
----
 
 ### Unity の準備
 
@@ -58,9 +53,9 @@ Android 13
 
 7. apk ファイルが作成させるので、Android 端末に転送しインストール
 
----
+## ROS 2のワークスペースの作成（ノートPC側の準備）
 
-### ROS 2 側の準備
+### パッケージのインストール & ビルド
 
 1. [ROS-TCP-Endpoint](https://github.com/Unity-Technologies/ROS-TCP-Endpoint) パッケージのインストール
    ```
@@ -75,11 +70,12 @@ Android 13
    ```
    ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
    ```
-   ※ROS_IP はスマートフォンの IP アドレスを設定してください。
+   ※ROS_IPはスマートフォンのIPアドレスを設定してください。  
+   ※ノートPCとスマートフォンは同一のネットワークで接続されている必要があります。
 
----
+## おまけ
 
-### rosbag
+### rosbagによるデータ収集
 
 1. rosbag の録画  
    すべてのトピックを記録する場合（-a オプション）
@@ -93,14 +89,13 @@ Android 13
 2. rosbag の停止  
    録画を停止するには、以下のコマンドを実行  
    `Ctrl + C`
-3. rosbag の再生  
+3. rosbag の再生
    ```
    ros2 bag play <ファイル名>.db3
    ```
 
----
 
-### Foxglove での可視化
+### Foxgloveでの可視化
 
 1. [Foxglove](https://console.foxglove.dev/) にアクセスしログイン  
    <img src="https://github.com/CIT-Autonomous-Robot-Lab/VPS_documentation/blob/main/images/foxglovelogin.png" width="720px">
